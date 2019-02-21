@@ -1,0 +1,49 @@
+.author_wrap{
+	width: 540px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.tag_link{
+	text-decoration: none;
+	display: inline-block;
+	background-color: #64c5b1 !important;   
+    padding: 0 5px 4px 5px;
+    margin: 3px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .25em;
+}
+
+.tag_link:hover{
+	color: #4489e4;
+}
+
+.tags_wrap{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all .3s linear;
+}
+
+.summary{
+	width: 100%;
+	text-align: justify;
+}
+
+.summary::first-line {
+    color: blue;
+    font-style: italic;
+    font-weight: bold; 
+}
+
+@media (max-width: 540px) {
+	.author_wrap{
+		width: 100%;  
+	}
+}
+

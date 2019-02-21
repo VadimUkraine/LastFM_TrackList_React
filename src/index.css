@@ -1,3 +1,10 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+*{
+	box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   padding: 0;

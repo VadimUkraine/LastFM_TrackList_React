@@ -1,0 +1,101 @@
+.track-wrap{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1370px;
+  margin: 0 auto 3px auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+.track_name{
+  width: 230px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: start;
+  margin-right: 20px;
+  margin-left: 10px;
+
+}
+
+.artist_name{
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: start;
+  text-decoration: none;
+}
+
+.artist_name:hover{
+  color: #FF69B4;
+}
+
+
+.artist_avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.name_artist_wrap{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.avatar_url_wrap{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.link_author{
+  width: 80px;
+  margin-right: 7px;
+  text-decoration: none;
+
+}
+.link_author:hover{
+  color: #00FF00;
+}
+
+@media (max-width: 1370px) {
+  .track-wrap{
+    width: 100%;  
+  }
+}
+
+@media (max-width: 760px) {
+   .track-wrap{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .name_artist_wrap{
+      width: 100%;
+      justify-content: space-between;
+   }
+   .avatar_url_wrap{
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-between;
+   }
+   .artist_avatar{
+      margin-left: 9%;
+   }
+   .link_author{
+      margin-right: 9%;
+    }
+    .track_name{
+      margin-left: 9%;
+    }
+   .artist_name{
+      text-align: end;
+      margin-right: 9%;
+    }
+
+}
